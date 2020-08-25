@@ -34,6 +34,9 @@ export interface InteractiveApprovalDriver {
   onError(message: string): void
 }
 
+/**
+ * Prompt response.
+ */
 export interface PromptResponse {
   /**
    * Selected Pulls to approve.
@@ -59,6 +62,9 @@ export interface InteractiveApprovalResult {
   failedPulls: Pull[]
 }
 export const InteractiveApprovalResult = {
+  /**
+   * Empty result.
+   */
   empty: {
     approvedPulls: [],
     failedPulls: [],

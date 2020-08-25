@@ -121,6 +121,6 @@ function printHelp() {
  * @param message
  */
 function exitWithError(message: string): never {
-  console.error(message)
+  NiceLogger.error(message)
   process.exit(1)
 }
